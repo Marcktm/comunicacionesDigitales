@@ -1,0 +1,17 @@
+name: lab3-sdr
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - libiio
+  - pylibiio
+  - pip
+  - pip:
+      - pyadi-iio
