@@ -1,0 +1,19 @@
+# App Streamlit didáctica — Comunicaciones Digitales (FCEFyN UNC)
+# Núcleo
+streamlit>=1.36
+numpy
+scipy
+matplotlib
+plotly
+pandas
+sympy            # derivaciones simbólicas puntuales
+statsmodels      # QQ-plots (Lab 2, caracterización de ruido)
+
+# SDR (ADALM-Pluto por VPN) — opcional para correr la app sin hardware
+pyadi-iio
+pylibiio
+scikit-dsp-comm  # sk_dsp_comm (filtros, eye_plot)
+scikit-commpy    # commpy.filters (RC/RRC)
+
+# Tests
+pytest

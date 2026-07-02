@@ -1,0 +1,25 @@
+# Entorno conda self-contained para la app (incluye stack SDR con libiio).
+# Uso:  conda env create -f streamlit_app/environment.yml && conda activate comdig-app
+#       streamlit run streamlit_app/app.py
+name: comdig-app
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - sympy
+  - statsmodels
+  - libiio        # backend nativo del SDR (ADALM-Pluto)
+  - pylibiio
+  - pip
+  - pip:
+      - streamlit>=1.36
+      - plotly
+      - pyadi-iio
+      - scikit-dsp-comm
+      - scikit-commpy
+      - pytest
