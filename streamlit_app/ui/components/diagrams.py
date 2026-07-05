@@ -143,6 +143,47 @@ digraph {{ {_STYLE}
 }}"""
 
 
+def pluto_architecture_diagram() -> str:
+    """Bloques del ADALM-Pluto: frontend AD9363 (RF) + backend Zynq (FPGA+ARM+Linux)."""
+    return f"""
+digraph {{ {_STYLE.replace('rankdir=LR', 'rankdir=TB')}
+  anttx [shape=plaintext, label="📡 antena TX"];
+  antrx [shape=plaintext, label="📡 antena RX"];
+  subgraph cluster_fe {{
+    label="FrontEnd — AD9363 (transceptor de conversión directa)"; style=dashed;
+    txc [shape=box, label="Cadena TX:\\nFIR → interpolación → DAC → filtro → mezclador (tx_lo) → PA/atenuador"];
+    rxc [shape=box, label="Cadena RX:\\nLNA → mezclador (rx_lo) → filtro → ADC → decimación → FIR → AGC"];
+  }}
+  subgraph cluster_be {{
+    label="BackEnd — Zynq Z-7010 (FPGA + ARM Cortex-A9)"; style=dashed;
+    fpga  [shape=box, label="FPGA: filtro decimador ÷8\\n(extiende el mínimo a ~65 kSPS)"];
+    linux [shape=box, label="Linux embebido + IIO subsystem\\n(iiod escucha por red)"];
+  }}
+  host [shape=box, label="PC del usuario:\\nPython → pyadi-iio → libiio → [VPN] → iiod"];
+  txc -> anttx;
+  antrx -> rxc;
+  fpga -> txc [label="muestras I/Q"];
+  rxc  -> fpga [label="muestras I/Q"];
+  linux -> fpga [dir=both, label="config (sample_rate, lo, gain)"];
+  host -> linux [dir=both, label="Ethernet (ip:192.168.1.3x)"];
+}}"""
+
+
+def loopback_diagram() -> str:
+    """Los tres modos de loopback del Pluto: 0 antena, 1 digital, 2 RF."""
+    return f"""
+digraph {{ {_STYLE}
+  tx  [shape=box, label="TX digital\\n(muestras I/Q)"];
+  dac [shape=box, label="DAC + RF TX"];
+  aire[shape=plaintext, label="〰 aire 〰"];
+  adc [shape=box, label="RF RX + ADC"];
+  rx  [shape=box, label="RX digital\\n(muestras I/Q)"];
+  tx -> dac; dac -> aire [label="loopback = 0 (antena)"]; aire -> adc; adc -> rx;
+  tx -> rx  [label="loopback = 1 (digital: bypass total del RF)", style=dashed, color="#1f77b4"];
+  dac -> adc [label="loopback = 2 (RF interno, sin aire)", style=dotted, color="#d62728"];
+}}"""
+
+
 def render(dot: str) -> None:
     """Renderiza un diagrama DOT en la página."""
     st.graphviz_chart(dot, width="stretch")
