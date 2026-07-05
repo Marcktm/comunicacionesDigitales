@@ -184,6 +184,38 @@ digraph {{ {_STYLE}
 }}"""
 
 
+def lowpass_channel_diagram() -> str:
+    """Fig. 5.1 (pág. 160) — canal pasa-bajo ideal: w(t) → h(t) → +N(t) → R(t)."""
+    return f"""
+digraph {{ {_STYLE}
+  win   [shape=plaintext, label="w(t)"];
+  h     [shape=box, label="h(t)\\n(pasa-bajo ideal, corte B)"];
+  sum   [shape=circle, label="+", width=0.4, fixedsize=true];
+  rout  [shape=plaintext, label="R(t)"];
+  noise [shape=plaintext, label="N(t)  (AWGN, N₀/2)"];
+  win -> h; h -> sum; noise -> sum; sum -> rout;
+}}"""
+
+
+def symbol_by_symbol_diagram() -> str:
+    """Fig. 5.2 (pág. 161) — símbolo a símbolo sobre un tren de pulsos."""
+    return f"""
+digraph {{ {_STYLE}
+  sin  [shape=plaintext, label="s_j"];
+  wf   [shape=box, label="Waveform Former\\nψ(t)"];
+  h    [shape=box, label="h(t)"];
+  sum  [shape=circle, label="+", width=0.4, fixedsize=true];
+  n    [shape=plaintext, label="N(t)"];
+  mf   [shape=box, label="ψ*(−t)\\n(matched filter)"];
+  samp [shape=box, label="muestrear\\nt = jT"];
+  yout [shape=plaintext, label="Y_j"];
+  sin -> wf [label="s_j·ψ(t−jT)"];
+  wf -> h; h -> sum; n -> sum;
+  sum -> mf [label="R(t)"];
+  mf -> samp; samp -> yout;
+}}"""
+
+
 def render(dot: str) -> None:
     """Renderiza un diagrama DOT en la página."""
     st.graphviz_chart(dot, width="stretch")
