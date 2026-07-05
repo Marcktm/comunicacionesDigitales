@@ -1,6 +1,7 @@
 ## Probabilidad de error
 
-> **Referencias.** Bixio Rimoldi §2.2, §2.3, §2.6; apunte Cabrera §1.9–1.11. Reunimos aquí las
+> **Referencias.** Bixio Rimoldi §2.2 (**pág. 26**), §2.3 (**pág. 31**) y §2.6 (*Error
+> probability bounds*, **págs. 44–48**); apunte Cabrera §1.9–1.11. Reunimos aquí las
 > herramientas para **calcular o acotar** $P_e$ en un canal AWGN.
 
 ---

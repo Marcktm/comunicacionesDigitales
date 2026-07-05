@@ -1,7 +1,8 @@
 ## Diseño de receptor para el canal AWGN de tiempo discreto
 
-> **Referencias.** Bixio Rimoldi §2.4; apunte Cabrera §1.9. Especializamos la prueba de
-> hipótesis al canal más importante: el **AWGN de tiempo discreto**.
+> **Referencias.** Bixio Rimoldi §2.4 (*Receiver design for the discrete-time AWGN channel*,
+> **págs. 32–34**; el modelo es la **Fig. 2.5, pág. 31**); apunte Cabrera §1.9. Especializamos la
+> prueba de hipótesis al canal más importante: el **AWGN de tiempo discreto**.
 
 ---
 

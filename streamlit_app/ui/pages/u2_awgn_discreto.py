@@ -19,15 +19,16 @@ def render() -> None:
         render_theory("u2_awgn_discreto.md")
 
     with tg:
-        st.subheader("Canal AWGN discreto (Fig. 2.5)")
+        st.subheader("Canal AWGN discreto (Fig. 2.5 del libro, pág. 31)")
         st.caption("El transmisor envía c_i; el canal suma ruido Z ~ N(0, σ²Iₙ); Y = c_i + Z.")
         diagrams.render(diagrams.awgn_discrete_diagram())
 
         st.divider()
         st.subheader("Regiones de decisión de mínima distancia (Voronoi)")
         st.caption(
-            "Ejemplo 4-QAM: cada color es el conjunto de observaciones y más cercanas a ese c_i. "
-            "La regla ML elige el punto más cercano; no necesita conocer σ²."
+            "Como la **Fig. 2.8 del libro (pág. 38)**, para 4-QAM: cada color es el conjunto de "
+            "observaciones y más cercanas a ese c_i. La regla ML elige el punto más cercano; no "
+            "necesita conocer σ²."
         )
         render_plotly(voronoi_figure(qam4_constellation(2.0)))
 

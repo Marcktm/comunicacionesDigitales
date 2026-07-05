@@ -1,7 +1,8 @@
 ## Prueba de hipótesis M-aria
 
-> **Referencias.** Bixio Rimoldi §2.2.2 y §2.4.3; apunte 2026 (decisión m-aria de n-tuplas).
-> Generalizamos de 2 a $m$ hipótesis.
+> **Referencias.** Bixio Rimoldi §2.2.2 (**pág. 30**), §2.4.3 (**págs. 39–41**; las regiones de
+> Voronoi son la **Fig. 2.8, pág. 38**) y §2.6.1 (*Union bound*, **págs. 44–48**); apunte 2026
+> (decisión m-aria de n-tuplas). Generalizamos de 2 a $m$ hipótesis.
 
 ---
 

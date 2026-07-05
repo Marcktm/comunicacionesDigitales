@@ -1,7 +1,9 @@
 ## Hipótesis M-aria vectorial: m-PAM y m-QAM
 
-> **Referencias.** Bixio Rimoldi §2.4.3; apunte 2026 (ejemplos 6-PAM y 4-QAM). En el canal AWGN
-> la regla ML es de **mínima distancia**, y las regiones de decisión son **regiones de Voronoi**.
+> **Referencias.** Bixio Rimoldi §2.4.3 (**págs. 39–41**; la constelación 6-PAM es la
+> **Fig. 2.9, pág. 39** y la 4-QAM es la **Fig. 2.10, pág. 40**); apunte 2026 (ejemplos 6-PAM y
+> 4-QAM). En el canal AWGN la regla ML es de **mínima distancia**, y las regiones de decisión
+> son **regiones de Voronoi**.
 
 ---
 

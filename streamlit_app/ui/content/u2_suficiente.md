@@ -1,6 +1,7 @@
 ## Estadística suficiente
 
-> **Referencias.** Bixio Rimoldi §2.5; apunte 2026 (reducción de dimensionalidad). Una
+> **Referencias.** Bixio Rimoldi §2.5 (*Irrelevance and sufficient statistic*, **págs. 41–44**);
+> apunte 2026 (reducción de dimensionalidad). Una
 > **estadística suficiente** resume toda la información del observable sobre la hipótesis, y
 > permite tirar el resto **sin perder** capacidad de decisión.
 

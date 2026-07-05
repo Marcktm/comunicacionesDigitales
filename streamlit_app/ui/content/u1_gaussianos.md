@@ -1,6 +1,7 @@
 ## Vectores aleatorios gaussianos
 
-> **Referencias.** Roy Yates (vectores gaussianos) y Bixio §2.10 (apéndice). Es la distribución
+> **Referencias.** Roy Yates (vectores gaussianos) y Bixio §2.10 (*Appendix: Gaussian random
+> vectors*, **págs. 61–65**). Es la distribución
 > del **ruido** en el canal AWGN y la que hace tan tratable el diseño del receptor.
 
 ---

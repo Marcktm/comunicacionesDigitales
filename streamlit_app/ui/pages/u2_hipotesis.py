@@ -46,7 +46,7 @@ def render() -> None:
         render_theory("u2_hipotesis.md")
 
     with tab_graf:
-        st.subheader("Configuración general (Fig. 2.1)")
+        st.subheader("Configuración general (Fig. 2.1 del libro, pág. 23)")
         st.caption("Fuente → Transmisor → Canal → Receptor. El receptor adivina Ĥ a partir de Y.")
         diagrams.render(diagrams.channel_block_diagram())
 

@@ -1,6 +1,7 @@
 ## Prueba de hipótesis — MAP y ML (caso general)
 
-> **Referencias.** Bixio Rimoldi §2.2; apunte Cabrera §1.3–1.5. Esta página establece el marco
+> **Referencias.** Bixio Rimoldi §2.2 (*Hypothesis testing*, **págs. 26–31**); apunte Cabrera
+> §1.3–1.5. Esta página establece el marco
 > general (m hipótesis, observable cualquiera). El caso AWGN binario escalar se desarrolla con
 > todo detalle en *Criterio MAP y ML*.
 

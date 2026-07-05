@@ -21,10 +21,12 @@ def sample_gaussian(mean, cov, n, seed=None):
     Usa el método de Cholesky (cov debe ser definida positiva; en la UI |ρ|<1).
     """
     rng = np.random.default_rng(seed)
-    return rng.multivariate_normal(
-        np.asarray(mean, dtype=float), np.asarray(cov, dtype=float),
-        size=n, method="cholesky",
-    )
+    # errstate: matmul emite warnings espurios con Accelerate BLAS (macOS ARM)
+    with np.errstate(all="ignore"):
+        return rng.multivariate_normal(
+            np.asarray(mean, dtype=float), np.asarray(cov, dtype=float),
+            size=n, method="cholesky",
+        )
 
 
 def mean_vector(samples):

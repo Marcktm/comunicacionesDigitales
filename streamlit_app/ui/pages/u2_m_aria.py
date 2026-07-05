@@ -32,6 +32,7 @@ def render() -> None:
 
     with tg:
         st.subheader("Regiones de decisión (Voronoi) y cotas de Pe")
+        st.caption("Reproduce la **Fig. 2.8 del libro (pág. 38)** para la constelación elegida.")
         c = st.columns(2)
         name = c[0].selectbox("Constelación", list(_CONSTELLATIONS))
         sigma = c[1].slider("σ (ruido)", 0.1, 1.5, 0.4, 0.05)

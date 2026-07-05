@@ -1,6 +1,7 @@
 ## La función Q
 
-> **Referencias.** Bixio Rimoldi §2.3; apunte Cabrera §1.6–1.8. La función $Q$ es la herramienta
+> **Referencias.** Bixio Rimoldi §2.3 (*The Q function*, **págs. 31–32**; las demostraciones de
+> las propiedades están en la pág. 32); apunte Cabrera §1.6–1.8. La función $Q$ es la herramienta
 > con la que se expresan las probabilidades de error en canales con ruido gaussiano.
 
 ---

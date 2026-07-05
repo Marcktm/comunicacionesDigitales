@@ -1,6 +1,7 @@
 ## Decisión binaria para observaciones escalares
 
-> **Referencias.** Bixio Rimoldi §2.4.1; apunte Cabrera §1.9.1–1.9.2. El receptor óptimo para una
+> **Referencias.** Bixio Rimoldi §2.4.1 (**págs. 34–35**; el umbral y las áreas de error son la
+> **Fig. 2.6, pág. 34**); apunte Cabrera §1.9.1–1.9.2. El receptor óptimo para una
 > observación escalar es simplemente un **comparador con un umbral**. Acá miramos su
 > interpretación como detector (falsos positivos / negativos).
 

@@ -1,6 +1,8 @@
 ## Decisión binaria con observaciones vectoriales
 
-> **Referencias.** Bixio Rimoldi §2.4.2; apunte 2026 (decisión binaria de n-tuplas). Extendemos
+> **Referencias.** Bixio Rimoldi §2.4.2 (*Binary decision for n-tuple observations*,
+> **págs. 35–39**; la geometría del plano afín con p y q es la **Fig. 2.7, pág. 36**); apunte
+> 2026 (decisión binaria de n-tuplas). Extendemos
 > la decisión binaria a $n$ dimensiones y descubrimos que **sólo importa la dirección que une
 > las dos señales**.
 

@@ -1,6 +1,7 @@
 ## Vector de valor esperado y matriz de correlación
 
-> **Referencias.** Roy Yates (vectores aleatorios); se usa en Bixio §2.4.2/§2.10. Herramientas
+> **Referencias.** Roy Yates (vectores aleatorios); se usa en Bixio §2.4.2 (**pág. 35**) y §2.10
+> (**pág. 61**). Herramientas
 > para trabajar con **varias variables a la vez** (múltiples antenas, muestras, dimensiones).
 
 ---

@@ -21,8 +21,9 @@ def render() -> None:
     with tg:
         st.subheader("Plano afín de decisión en ℝ² (priori uniforme)")
         st.caption(
-            "Mové las dos señales c₀ y c₁: la frontera es el bisector perpendicular "
-            "(plano afín). Con priori uniforme, Pe = Q(d/2σ) sólo depende de la distancia d."
+            "Reproduce la geometría de la **Fig. 2.7 del libro (pág. 36)**: mové c₀ y c₁ y la "
+            "frontera es el bisector perpendicular (plano afín). Con priori uniforme, "
+            "Pe = Q(d/2σ) sólo depende de la distancia d."
         )
         c = st.columns(4)
         x0 = c[0].slider("c₀ · x", -3.0, 3.0, -1.0, 0.1)

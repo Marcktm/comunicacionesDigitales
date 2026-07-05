@@ -51,8 +51,8 @@ def render() -> None:
         m[2].metric("Pₑ(0)", f"{res.pe0:.3e}")
         m[3].metric("Pₑ(1)", f"{res.pe1:.3e}")
         st.caption(
-            "θ = σ²/(c₁−c₀)·ln η + (c₀+c₁)/2, con η = P(H=0)/P(H=1). "
-            "Áreas sombreadas = probabilidad de error condicional."
+            "Reproduce la **Fig. 2.6 del libro (pág. 34)**: θ = σ²/(c₁−c₀)·ln η + (c₀+c₁)/2, "
+            "con η = P(H=0)/P(H=1). Áreas sombreadas = probabilidad de error condicional."
         )
 
         st.divider()

@@ -1,7 +1,8 @@
 ## Criterio MAP y ML — prueba de hipótesis binaria
 
 > **Referencias.** Bixio Rimoldi, *Principles of Digital Communication*, §2.2 (prueba de
-> hipótesis) y §2.4.1 (decisión binaria escalar en canal AWGN). Apunte Cabrera §1.3–1.11.
+> hipótesis, **págs. 26–31**) y §2.4.1 (decisión binaria escalar en canal AWGN, **págs. 34–35**;
+> la figura del umbral es la **Fig. 2.6, pág. 34**). Apunte Cabrera §1.3–1.11.
 >
 > El objetivo de esta página es **demostrar de punta a punta** cómo se obtiene el receptor
 > óptimo y su probabilidad de error, sin saltar a la fórmula final — tal como hay que

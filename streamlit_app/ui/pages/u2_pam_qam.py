@@ -46,13 +46,13 @@ def render() -> None:
         d = c[1].slider("Distancia mínima d", 0.5, 4.0, 2.0, 0.1)
         sigma = c[2].slider("σ (ruido)", 0.1, 2.0, 0.5, 0.05)
 
-        st.subheader(f"Constelación {m}-PAM (Fig. 2.9)")
+        st.subheader(f"Constelación {m}-PAM (Fig. 2.9 del libro, pág. 39)")
         render_plotly(pam_constellation_figure(m, d))
         mp = st.columns(2)
         mp[0].metric(f"Pe {m}-PAM", f"{float(pam_symbol_error_prob(m, d, sigma)):.3e}")
         mp[0].caption(f"(2 − 2/{m})·Q(d/2σ) = {2 - 2/m:.3f}·Q({d/(2*sigma):.2f})")
 
-        st.subheader("Constelación 4-QAM (Fig. 2.10)")
+        st.subheader("Constelación 4-QAM (Fig. 2.10 del libro, pág. 40)")
         render_plotly(qam4_figure(d))
         mp[1].metric("Pe 4-QAM", f"{float(qam4_symbol_error_prob(d, sigma)):.3e}")
         mp[1].caption("2Q(d/2σ) − Q²(d/2σ)")

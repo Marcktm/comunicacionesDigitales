@@ -19,6 +19,7 @@ def render() -> None:
 
     with tg:
         st.subheader("Detector de umbral: falso positivo vs falso negativo")
+        st.caption("Reproduce la **Fig. 2.6 del libro (pág. 34)** con las dos áreas de error.")
         c = st.columns(4)
         c0 = c[0].slider("c₀", -5.0, 5.0, -1.0, 0.1)
         c1 = c[1].slider("c₁", -5.0, 5.0, 1.0, 0.1)
